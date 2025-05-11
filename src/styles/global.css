@@ -1,0 +1,41 @@
+:root {
+  --dark-grey: #484848;
+  --light-grey: #8a8a8a;
+  --white: #fff;
+  --black: #000;
+  --red: #DA3F3F;
+  --coral: #FF706B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

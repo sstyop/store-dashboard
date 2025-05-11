@@ -1,0 +1,48 @@
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 80%;
+
+  &::-webkit-slider-runnable-track {
+    background-color: var(--light-grey);
+    height: 4px;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -8px;
+    background-color: var(--coral);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}
+
+.selectedRating {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 500;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.filterTitle {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--dark-grey);
+}
+
+.icon {
+  font-size: 20px;
+  color: var(--coral);
+}

@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  max-width: 1408px;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 64px;
+  margin-inline: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 72px;
+  align-items: center;
+  color: var(--dark-grey);
+}
+
+.brandName {
+  font-size: 52px;
+  font-weight: 400;
+  font-family: 'Volkhov', sans-serif;
+  color: var(--dark-grey);
+  text-transform: uppercase;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--dark-grey);
+  transition: 0.15s ease-in-out;
+  
+  &:hover {
+    color: var(--red);
+  }
+}
+
+.utilityBar {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.search {
+  display: inline-flex;
+}

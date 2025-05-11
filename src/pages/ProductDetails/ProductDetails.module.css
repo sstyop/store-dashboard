@@ -1,0 +1,158 @@
+.container {
+  max-width: 1408px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 0 64px 72px;
+  margin-inline: auto;
+}
+
+.image {
+  width: 490px;
+  max-height: 650px;
+  height: -webkit-fill-available;
+  object-fit: contain;
+  padding: 0 40px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  font-family: "Volkhov", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--dark-grey);
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 42px;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  padding-right: 56px;
+  margin-bottom: 16px;
+}
+
+.blockTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.addToCart {
+  border: 1px solid var(--black);
+  background: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 400;
+  flex: 1;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+
+  &:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.priceBlock {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.price {
+  font-family: "Volkhov", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.oldPrice {
+  font-family: "Volkhov", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: line-through;
+  color: var(--dark-grey);
+  margin-left: 8px;
+}
+
+.discount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--white);
+  padding: 4px 8px;
+  background-color: var(--red);
+  border-radius: 12px;
+}
+
+.viewers {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--light-grey);
+  margin-top: 16px;
+}
+
+.prodDesc {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-grey);
+}
+
+.productLeft {
+  color: var(--dark-grey);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.loadErrorStates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+  font-size: 32px;
+  color: var(--dark-grey);
+}
