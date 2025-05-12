@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import styles from './ProductCart.module.css';
 
 const ProductCart = ({ product }) => {
-  console.log(product);
   return (
     <Link to={`/product/${product.id}`} className={styles.product}>
       <div className={styles.imageContainer}>
