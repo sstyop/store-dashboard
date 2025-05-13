@@ -16,8 +16,10 @@ const MiniCart = () => {
       <div className={styles.miniCart} onClick={(e) => e.stopPropagation()}>
         <h2 className={styles.title}>Shopping Cart</h2>
         <FaXmark className={styles.closeIcon} onClick={() => dispatch(closeMiniCart())} />
-        {items.length > 0 && <p className={styles.offerForFreeShipping}>Buy <b>$122.35</b> more and get <b>Free Shipping</b></p>}
-        {items.length > 0 && <p className={styles.clearCart} onClick={() => dispatch(clearCart())}>Clear Cart</p>}
+        {items.length > 0 && <>
+          <p className={styles.offerForFreeShipping}>Buy <b>$122.35</b> more and get <b>Free Shipping</b></p>
+          <p className={styles.clearCart} onClick={() => dispatch(clearCart())}>Clear Cart</p>
+        </>}
         {items.length === 0 ? (
           <p className={styles.emptyCart}>Your cart is empty.</p>
         ) : (
@@ -45,8 +47,10 @@ const MiniCart = () => {
           <span>Total</span>
           <b>${totalPrice.toFixed(2)}</b>
         </div>
-        {items.length > 0 && <button className={styles.checkoutButton}>Checkout</button>}
-        {items.length > 0 && <p className={styles.viewCart}>View Cart</p>}
+        {items.length > 0 && <>
+          <button className={styles.checkoutButton}>Checkout</button>
+          <p className={styles.viewCart}>View Cart</p>
+        </>}
       </div>
     </div>
   )
